@@ -1,0 +1,47 @@
+LocalLend/
+│
+├── frontend/                    # The User Interface (React App)
+│   ├── src/
+│   │   ├── pages/              # Full-page views
+│   │   │   ├── Landing.jsx     # Homepage with hero, features, CTA
+│   │   │   ├── Marketplace.jsx # Browse all listings (THE main page)
+│   │   │   ├── Dashboard.jsx   # "My Items" + "My Borrows"
+│   │   │   ├── CreateItem.jsx  # Upload form (image + details)
+│   │   │   ├── Chat.jsx        # P2P messaging
+│   │   │   ├── Requests.jsx    # Loan request management
+│   │   │   ├── Login.jsx       # Firebase auth login
+│   │   │   └── Register.jsx    # Firebase auth signup
+│   │   │
+│   │   ├── components/         # Reusable UI pieces
+│   │   │   ├── Navbar.jsx      # Top navigation bar
+│   │   │   ├── ItemCard.jsx    # Single listing card (glassmorphism)
+│   │   │   └── Button.jsx      # Styled buttons (gradient accents)
+│   │   │
+│   │   └── index.css           # Custom CSS (glassmorphism classes)
+│   │
+│   ├── Dockerfile              # Multi-stage build (Node → Nginx)
+│   └── package.json            # React dependencies
+│
+├── backend/                     # The API Brain (Express Server)
+│   ├── server.js               # Entry point (connects MongoDB, starts Express)
+│   │
+│   ├── models/                 # MongoDB Schemas (Data Blueprints)
+│   │   ├── User.js             # { firebaseUID, name, pincode, email }
+│   │   ├── Item.js             # { title, description, owner, status, images }
+│   │   └── Request.js          # { itemID, borrower, lender, status }
+│   │
+│   ├── controllers/            # Business Logic (What Happens)
+│   │   ├── authController.js   # Verify Firebase tokens, register users
+│   │   └── itemController.js   # Create/delete/fetch items
+│   │
+│   ├── routes/                 # URL Mapping (API Endpoints)
+│   │   ├── authRoutes.js       # POST /api/auth/register
+│   │   └── itemRoutes.js       # GET /api/items, POST /api/items
+│   │
+│   ├── middleware/             # Security Guards
+│   │   └── verifyFirebaseToken.js  # Checks if user is logged in
+│   │
+│   ├── Dockerfile              # Node.js container build
+│   └── package.json            # Express dependencies
+│
+└── docker-compose.yml          # Orchestrates both containers
