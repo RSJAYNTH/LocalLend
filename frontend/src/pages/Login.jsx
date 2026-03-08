@@ -42,7 +42,7 @@ const Login = () => {
                   <input
                      type="email"
                      required
-                     className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-zinc-700 outline-none"
+                     className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-zinc-500 outline-none text-zinc-900"
                      value={email}
                      onChange={(e) => setEmail(e.target.value)}
                   />
@@ -52,7 +52,7 @@ const Login = () => {
                   <input
                      type="password"
                      required
-                     className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-zinc-700 outline-none"
+                     className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-zinc-500 outline-none text-zinc-900"
                      value={password}
                      onChange={(e) => setPassword(e.target.value)}
                   />
@@ -60,14 +60,14 @@ const Login = () => {
 
                <button
                   type="submit"
-                  className="w-full bg-zinc-900 text-white py-2 rounded-lg font-semibold hover:bg-zinc-950 transition"
+                  className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
                >
                   Log In
                </button>
             </form>
 
             <p className="mt-4 text-center text-zinc-200">
-               Don't have an account? <Link to="/register" className="text-zinc-900 hover:underline">Register</Link>
+               Don't have an account? <Link to="/register" className="text-blue-400 hover:underline">Register</Link>
             </p>
          </div>
       </div>

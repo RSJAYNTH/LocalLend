@@ -108,18 +108,18 @@ const Register = () => {
                   <form onSubmit={handleRegisterAuth} className="space-y-6">
                      <div>
                         <label className="block text-sm font-bold text-white mb-1.5 uppercase tracking-wide">Email Address</label>
-                        <input name="email" type="email" placeholder="you@example.com" required className="w-full px-4 py-3.5  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-700 focus:glass-panel text-white transition-all font-medium text-zinc-200 placeholder-gray-400" onChange={handleChange} />
+                        <input name="email" type="email" placeholder="you@example.com" required className="w-full px-4 py-3.5  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:glass-panel text-zinc-900 transition-all font-medium placeholder-gray-400" onChange={handleChange} />
                      </div>
                      <div>
                         <label className="block text-sm font-bold text-white mb-1.5 uppercase tracking-wide">Password</label>
-                        <input name="password" type="password" placeholder="••••••••" required className="w-full px-4 py-3.5  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-700 focus:glass-panel text-white transition-all font-medium text-zinc-200 placeholder-gray-400" onChange={handleChange} />
+                        <input name="password" type="password" placeholder="••••••••" required className="w-full px-4 py-3.5  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:glass-panel text-zinc-900 transition-all font-medium placeholder-gray-400" onChange={handleChange} />
                      </div>
                      <div>
                         <label className="block text-sm font-bold text-white mb-1.5 uppercase tracking-wide">Confirm Password</label>
-                        <input name="confirmPassword" type="password" placeholder="••••••••" required className="w-full px-4 py-3.5  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-700 focus:glass-panel text-white transition-all font-medium text-zinc-200 placeholder-gray-400" onChange={handleChange} />
+                        <input name="confirmPassword" type="password" placeholder="••••••••" required className="w-full px-4 py-3.5  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:glass-panel text-zinc-900 transition-all font-medium placeholder-gray-400" onChange={handleChange} />
                      </div>
 
-                     <button disabled={loading} className="w-full flex justify-center items-center gap-2 bg-gradient-to-r from-zinc-900 to-zinc-900 text-white px-4 py-3.5 rounded-xl font-bold hover:from-zinc-950 hover:to-zinc-950 transition shadow-lg shadow-zinc-900/20 disabled:opacity-70 disabled:cursor-not-allowed transform hover:-translate-y-0.5 mt-4">
+                     <button disabled={loading} className="w-full flex justify-center items-center gap-2 bg-blue-600 text-white px-4 py-3.5 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-900/20 disabled:opacity-70 disabled:cursor-not-allowed transform hover:-translate-y-0.5 mt-4">
                         {loading ? (
                            <>
                               <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
@@ -132,21 +132,21 @@ const Register = () => {
                   <form onSubmit={handleCompleteProfile} className="space-y-5" autoComplete="off">
                      <div>
                         <label className="block text-sm font-bold text-white mb-1.5 uppercase tracking-wide">Full Name <span className="text-red-500">*</span></label>
-                        <input name="name" type="text" placeholder="John Doe" required className="w-full px-4 py-3  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-700 focus:glass-panel text-white transition-all font-medium text-zinc-200" onChange={handleChange} autoComplete="name" />
+                        <input name="name" type="text" placeholder="John Doe" required className="w-full px-4 py-3  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:glass-panel text-zinc-900 transition-all font-medium" onChange={handleChange} autoComplete="name" />
                      </div>
                      <div className="grid grid-cols-2 gap-4">
                         <div>
                            <label className="block text-sm font-bold text-white mb-1.5 uppercase tracking-wide">Phone <span className="text-red-500">*</span></label>
-                           <input name="phone" type="tel" placeholder="(555) 000-0000" required className="w-full px-4 py-3  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-700 focus:glass-panel text-white transition-all font-medium text-zinc-200" onChange={handleChange} autoComplete="tel" />
+                           <input name="phone" type="tel" placeholder="(555) 000-0000" required className="w-full px-4 py-3  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:glass-panel text-zinc-900 transition-all font-medium" onChange={handleChange} autoComplete="tel" />
                         </div>
                         <div>
                            <label className="block text-sm font-bold text-white mb-1.5 uppercase tracking-wide">Pincode <span className="text-red-500">*</span></label>
-                           <input name="pincode" type="text" placeholder="123456" required className="w-full px-4 py-3  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-700 focus:glass-panel text-white transition-all font-medium text-zinc-200" onChange={handleChange} autoComplete="postal-code" />
+                           <input name="pincode" type="text" placeholder="123456" required className="w-full px-4 py-3  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:glass-panel text-zinc-900 transition-all font-medium" onChange={handleChange} autoComplete="postal-code" />
                         </div>
                      </div>
                      <div>
                         <label className="block text-sm font-bold text-white mb-1.5 uppercase tracking-wide">Complete Address <span className="text-red-500">*</span></label>
-                        <textarea name="address" placeholder="123 Main St, Apt 4B" required className="w-full px-4 py-3  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-700 focus:glass-panel text-white transition-all font-medium text-zinc-200 resize-none h-24" onChange={handleChange} autoComplete="street-address" />
+                        <textarea name="address" placeholder="123 Main St, Apt 4B" required className="w-full px-4 py-3  border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:glass-panel text-zinc-900 transition-all font-medium resize-none h-24" onChange={handleChange} autoComplete="street-address" />
                      </div>
 
                      <button disabled={loading} className="w-full flex justify-center items-center gap-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-3.5 rounded-xl font-bold hover:from-green-600 hover:to-emerald-700 transition shadow-lg shadow-green-500/20 disabled:opacity-70 disabled:cursor-not-allowed transform hover:-translate-y-0.5 mt-6">
@@ -164,7 +164,7 @@ const Register = () => {
             {stage === 1 && (
                <p className="mt-8 text-center text-sm text-zinc-200 font-medium">
                   Already have an account?{' '}
-                  <Link to="/login" className="font-bold text-zinc-900 hover:text-zinc-700 transition-colors">
+                  <Link to="/login" className="font-bold text-blue-400 hover:text-blue-300 transition-colors">
                      Log in instead
                   </Link>
                </p>

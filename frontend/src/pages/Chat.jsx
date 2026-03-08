@@ -94,8 +94,8 @@ const Chat = () => {
                            </span>
                         )}
                         <div className={`px-5 py-3  border ${isMe
-                              ? 'bg-zinc-900 text-white rounded-2xl rounded-br-sm border-zinc-950'
-                              : 'glass-panel text-white text-zinc-200 rounded-2xl rounded-bl-sm border-white/10'
+                           ? 'bg-zinc-900 text-white rounded-2xl rounded-br-sm border-zinc-950'
+                           : 'glass-panel text-white text-zinc-200 rounded-2xl rounded-bl-sm border-white/10'
                            }`}>
                            <p className="text-sm md:text-base leading-relaxed">{msg.message}</p>
                         </div>
@@ -113,7 +113,7 @@ const Chat = () => {
             <form onSubmit={handleSend} className="flex gap-3 max-w-3xl mx-auto">
                <input
                   type="text"
-                  className="flex-grow  border border-white/20 rounded-full px-6 py-3.5 focus:outline-none focus:ring-2 focus:ring-zinc-700 focus:glass-panel text-white focus:border-transparent transition-all font-medium text-zinc-200 placeholder-gray-400 shadow-inner"
+                  className="flex-grow  border border-white/20 rounded-full px-6 py-3.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:glass-panel text-zinc-900 transition-all font-medium placeholder-gray-400 shadow-inner bg-zinc-100"
                   placeholder="Type your message..."
                   value={newMessage}
                   onChange={(e) => setNewMessage(e.target.value)}

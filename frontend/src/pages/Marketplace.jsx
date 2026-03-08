@@ -57,7 +57,7 @@ const Marketplace = () => {
                      onChange={(e) => setSearch(e.target.value)}
                   />
                </div>
-               <button type="submit" className="glass-panel bg-white/10 text-white px-8 py-3 rounded-xl font-bold hover:bg-white/20 transition active:scale-95 border border-white/20">
+               <button type="submit" className="glass-panel glass-panel text-white/10 text-white px-8 py-3 rounded-xl font-bold hover:glass-panel text-white/20 transition active:scale-95 border border-white/20">
                   Search
                </button>
             </form>

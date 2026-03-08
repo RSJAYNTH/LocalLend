@@ -82,9 +82,9 @@ const Requests = () => {
                                  {req.item?.name || <span className="text-zinc-200 italic font-medium">Item Deleted</span>}
                               </h3>
                               <span className={`px-3 py-1 text-xs rounded-full font-black tracking-wide uppercase  border ${req.status === 'APPROVED' ? 'bg-green-50 text-green-700 border-green-200' :
-                                    req.status === 'PENDING' ? 'bg-amber-50 text-amber-700 border-amber-200' :
-                                       req.status === 'REJECTED' ? 'bg-rose-50 text-rose-700 border-rose-200' :
-                                          'bg-zinc-100 text-zinc-950 border-zinc-300' // RETURNED
+                                 req.status === 'PENDING' ? 'bg-amber-50 text-amber-700 border-amber-200' :
+                                    req.status === 'REJECTED' ? 'bg-rose-50 text-rose-700 border-rose-200' :
+                                       'bg-zinc-100 text-zinc-950 border-zinc-300' // RETURNED
                                  }`}>
                                  {req.status}
                               </span>
@@ -99,7 +99,7 @@ const Requests = () => {
                               {activeTab === 'incoming' ? (
                                  <div className="flex items-center gap-2">
                                     <span className="text-zinc-200">Borrower:</span>
-                                    <div className="flex items-center gap-1 bg-gray-100 px-2 py-1 rounded-md">
+                                    <div className="flex items-center gap-1 bg-gray-100 text-zinc-900 px-2 py-1 rounded-md">
                                        <span className="font-bold">{req.borrower?.name || 'Unknown User'}</span>
                                        <span className="text-amber-500 text-xs">★ {req.borrower?.reputation || 0}</span>
                                     </div>
@@ -107,7 +107,7 @@ const Requests = () => {
                               ) : (
                                  <div className="flex items-center gap-2">
                                     <span className="text-zinc-200">Owner:</span>
-                                    <span className="font-bold bg-gray-100 px-2 py-1 rounded-md">{req.owner?.name || 'Unknown User'}</span>
+                                    <span className="font-bold bg-gray-100 text-zinc-900 px-2 py-1 rounded-md">{req.owner?.name || 'Unknown User'}</span>
                                  </div>
                               )}
                            </div>

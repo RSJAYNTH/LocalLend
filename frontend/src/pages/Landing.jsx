@@ -7,7 +7,7 @@ const Landing = () => {
          {/* Navbar */}
          <nav className="flex justify-between items-center p-6 lg:px-12 glass-panel sticky top-0 z-50">
             <div className="text-2xl font-black text-gradient-premium flex items-center gap-2 tracking-tight">
-               <div className="p-2 bg-white/5 rounded-xl border border-white/10">
+               <div className="p-2 glass-panel text-white/5 rounded-xl border border-white/10">
                   <Share2 className="w-7 h-7 text-white" />
                </div>
                LocalLend
@@ -28,7 +28,7 @@ const Landing = () => {
             <div className="absolute bottom-[-20%] left-[20%] w-96 h-96 bg-amber-600 rounded-full mix-blend-screen filter blur-[120px] opacity-20 animate-blob animation-delay-4000"></div>
 
             <div className="relative z-10 max-w-4xl mx-auto glass-panel p-10 md:p-16 rounded-3xl spotlight-card">
-               <span className="inline-block py-1.5 px-4 rounded-full bg-white/5 border border-white/10 text-white text-sm font-bold tracking-wide uppercase mb-8">
+               <span className="inline-block py-1.5 px-4 rounded-full glass-panel text-white/5 border border-white/10 text-white text-sm font-bold tracking-wide uppercase mb-8">
                   Reimagining Ownership
                </span>
                <h1 className="text-5xl md:text-7xl font-extrabold text-zinc-100 mb-8 tracking-tight leading-tight">
@@ -39,7 +39,7 @@ const Landing = () => {
                   The hyper-local marketplace for sharing everyday items within your community. Save money, reduce waste, and build trust instantly.
                </p>
                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                  <Link to="/register" className="w-full sm:w-auto flex justify-center items-center gap-2 bg-white text-black px-8 py-4 rounded-full text-lg font-bold hover:bg-zinc-200 transition-all shadow-[0_0_30px_rgba(255,255,255,0.3)] transform hover:-translate-y-1">
+                  <Link to="/register" className="w-full sm:w-auto flex justify-center items-center gap-2 glass-panel text-white text-black px-8 py-4 rounded-full text-lg font-bold hover:bg-zinc-200 transition-all shadow-[0_0_30px_rgba(255,255,255,0.3)] transform hover:-translate-y-1">
                      Start Sharing Now <ArrowRight size={20} />
                   </Link>
                   <Link to="/login" className="w-full sm:w-auto flex justify-center items-center px-8 py-4 rounded-full text-lg font-bold text-white  border border-white/20 hover:bg-gray-100 transition-colors">
@@ -58,7 +58,7 @@ const Landing = () => {
 
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">
                <div className="glass-panel p-10 rounded-3xl spotlight-card group">
-                  <div className="bg-white/10 border border-white/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-zinc-100 group-hover:scale-110 transition-transform">
+                  <div className="glass-panel text-white/10 border border-white/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-zinc-100 group-hover:scale-110 transition-transform">
                      <MapPin size={28} />
                   </div>
                   <h3 className="text-2xl font-bold mb-3 text-zinc-100">Hyper-Local</h3>
@@ -66,7 +66,7 @@ const Landing = () => {
                </div>
 
                <div className="glass-panel p-10 rounded-3xl spotlight-card group">
-                  <div className="bg-white/10 border border-white/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-zinc-100 group-hover:scale-110 transition-transform">
+                  <div className="glass-panel text-white/10 border border-white/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-zinc-100 group-hover:scale-110 transition-transform">
                      <ShieldCheck size={28} />
                   </div>
                   <h3 className="text-2xl font-bold mb-3 text-zinc-100">Verified Trust</h3>
@@ -74,7 +74,7 @@ const Landing = () => {
                </div>
 
                <div className="glass-panel p-10 rounded-3xl spotlight-card group">
-                  <div className="bg-white/10 border border-white/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-zinc-100 group-hover:scale-110 transition-transform">
+                  <div className="glass-panel text-white/10 border border-white/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-zinc-100 group-hover:scale-110 transition-transform">
                      <Share2 size={28} />
                   </div>
                   <h3 className="text-2xl font-bold mb-3 text-zinc-100">Easy Lending</h3>

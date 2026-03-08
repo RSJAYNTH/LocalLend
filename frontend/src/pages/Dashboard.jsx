@@ -53,7 +53,7 @@ const Dashboard = () => {
                   <div className="glass-panel p-8 rounded-3xl flex-grow flex flex-col spotlight-card">
                      <div className="flex justify-between items-center border-b border-white/10 pb-6 mb-6">
                         <h2 className="text-2xl font-extrabold text-zinc-100">My Listings</h2>
-                        <Link to="/create-item" className="hidden sm:flex text-white bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-bold hover:bg-white/10 transition-colors items-center gap-2 hover:text-white">
+                        <Link to="/create-item" className="hidden sm:flex text-white glass-panel text-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-bold hover:glass-panel text-white/10 transition-colors items-center gap-2 hover:text-white">
                            + List New Item
                         </Link>
                      </div>
@@ -63,7 +63,7 @@ const Dashboard = () => {
                      </div>
 
                      <div className="mt-8 pt-6 border-t border-white/10">
-                        <Link to="/marketplace" className="w-full bg-white text-black px-6 py-4 rounded-xl hover:bg-zinc-200 text-center font-bold shadow-lg transform transition-transform hover:-translate-y-0.5 block">
+                        <Link to="/marketplace" className="w-full glass-panel text-white text-black px-6 py-4 rounded-xl hover:bg-zinc-200 text-center font-bold shadow-lg transform transition-transform hover:-translate-y-0.5 block">
                            Explore Marketplace
                         </Link>
                      </div>
@@ -73,13 +73,13 @@ const Dashboard = () => {
                {/* Right Column - Requests & Actions */}
                <div className="lg:col-span-4 flex flex-col gap-8">
                   <div className="glass-panel spotlight-card p-8 rounded-3xl">
-                     <div className="w-12 h-12 bg-white/10 text-zinc-100 rounded-2xl flex items-center justify-center mb-5 border border-white/20">
+                     <div className="w-12 h-12 glass-panel text-white/10 text-zinc-100 rounded-2xl flex items-center justify-center mb-5 border border-white/20">
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
                      </div>
                      <h2 className="text-xl font-extrabold text-zinc-100 mb-2">Manage Requests</h2>
                      <p className="text-zinc-200 mb-6 font-medium leading-relaxed">Review incoming requests for your items and track your outgoing borrows.</p>
 
-                     <Link to="/requests" className="bg-white/10 border border-white/10 text-white px-6 py-3.5 rounded-xl font-bold hover:bg-white/20 transition-all block text-center flex items-center justify-center gap-2 group">
+                     <Link to="/requests" className="glass-panel text-white/10 border border-white/10 text-white px-6 py-3.5 rounded-xl font-bold hover:glass-panel text-white/20 transition-all block text-center flex items-center justify-center gap-2 group">
                         View Requests
                         <span className="group-hover:translate-x-1 transition-transform">→</span>
                      </Link>
@@ -87,10 +87,10 @@ const Dashboard = () => {
 
                   {/* Mobile Create Item Fallback if hidden in header */}
                   <div className="sm:hidden glass-panel p-6 rounded-3xl flex flex-col items-center text-center">
-                     <div className="bg-white/10 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-2xl mb-4 border border-white/20">+</div>
+                     <div className="glass-panel text-white/10 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-2xl mb-4 border border-white/20">+</div>
                      <h3 className="font-bold text-zinc-100 mb-1 leading-tight">Got something to share?</h3>
                      <p className="text-sm text-zinc-200 mb-5 font-medium">List an item for your neighbors.</p>
-                     <Link to="/create-item" className="bg-white text-black w-full px-4 py-3 rounded-xl font-bold transition-colors hover:bg-zinc-200">
+                     <Link to="/create-item" className="glass-panel text-white text-black w-full px-4 py-3 rounded-xl font-bold transition-colors hover:bg-zinc-200">
                         List New Item
                      </Link>
                   </div>
