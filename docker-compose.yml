@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+    # Add env_file if you plan to inject a real .env file instead:
+    # env_file:
+    #   - ./backend/.env
+    restart: unless-stopped
+    networks:
+      - locallend-network
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "80:80"
+    # Using 'depends_on' ensures the backend boots first
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - locallend-network
+
+networks:
+  locallend-network:
+    driver: bridge
