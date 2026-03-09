@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import api from '../api/axios';
 import { useAuth } from '../context/AuthContext';
-import { Send } from 'lucide-react';
+import { Send, MessageCircle } from 'lucide-react';
 
 const Chat = () => {
    const { requestId } = useParams();
